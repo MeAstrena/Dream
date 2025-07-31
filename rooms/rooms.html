@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html ru>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Мечта">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Номера</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <script>
+            function smoothScroll(event, targetId) {
+                event.preventDefault(); // Отменяем стандартное поведение ссылки
+                const targetElement = document.getElementById(targetId); // Находим целевой элемент
+                targetElement.scrollIntoView({
+                    behavior: 'smooth' // Устанавливаем плавный переход
+                });
+            }
+        </script>
+        <header class="header-section" id="home1">
+            <section class="top-nav">
+
+                <div class="logo-top">
+                     <a href="#home1" onclick="smoothScroll(event, 'home1')">
+                        <img src="./img/logo1.png" alt="">
+                     </a>
+                </div>
+
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+                </label>
+                 <ul class="menu_top">
+                    <li><a href="..\home.html">Главная</a></li>
+                    <li><a href="..\restaurants.html">Рестораны</a></li>
+                 </ul>
+
+            </section>
+            <div class="menu-item" id="home">
+                <div class="containero">
+                    <div class="row">
+
+                        <div class="logo1">
+                            <div class="logo">
+                                <a href="#home" onclick="smoothScroll(event, 'home')">
+                                    <img src="./img/logo1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="menus">
+                            <div class="nav-menu">
+                                <nav class="mainmenu">
+                                    <ul>
+                                        <li class="ost"><a href="..\restaurants.html">Рестораны</a></li>
+                                        <li class="contact" style="padding-left: 55px;"><a href="..\home.html">Главная</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="carousel" id="slider" style="z-index: -1;">
+                <div class="carousel-wrapper">
+                    <span id="target-item-1"></span>
+                    <span id="target-item-2"></span>
+                    <span id="target-item-3"></span>
+
+                    <div class="carousel-item item-1"></div>
+                    <div class="carousel-item item-2 light"></div>
+                    <div class="carousel-item item-3"></div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container-rooms">
+                <div class="container" style="position: relative;top: 160px; width: 100%; z-index: 10; margin: 0px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title">
+                                <h2>Выберете тип номера:</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-7">
+                            <a href="./standart.html"><div class="service-item">
+                                <i></i>
+                                <h4>Стандарт</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna.</p>
+                                <img src="E:\Университет\Dream\rooms\img\room\standart.jpg" alt="">
+                            </div></a>
+                        </div>
+                        <div class="col-lg-3 col-sm-7 url">
+                            <a href="./deluxe.html"><div class="service-item">
+                                <i></i>
+                                <h4>Делюкс</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna.</p>
+                                <img src="E:\Университет\Dream\rooms\img\room\deluxe.jpg" alt="">
+                            </div></a>
+                        </div>
+                        <div class="col-lg-3 col-sm-7">
+                            <a href="./family.html"><div class="service-item">
+                                <i></i>
+                                <h4>Семейный</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna.</p>
+                                <img src="E:\Университет\Dream\rooms\img\room\family2.jpg" alt="">
+                            </div></a>
+                        </div>
+                        <div class="col-lg-3 col-sm-7">
+                            <a href="./premium.html"><div class="service-item">
+                                <i></i>
+                                <h4>Премиум</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna.</p>
+                                <img src="E:\Университет\Dream\rooms\img\room\premium2.jpg" alt="">
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <a href="./standart.html"><div class="service-item1">
+                            <i></i>
+                            <h4>Стандарт</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna.</p>
+                        </div></a>
+                        <a href="./deluxe.html"><div class="service-item1">
+                            <i></i>
+                            <h4>Делюкс</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna.</p>
+                        </div></a>
+                    </div>
+                    <div class="bottom">
+                        <a href="./family.html"><div class="service-item1">
+                            <i></i>
+                            <h4>Семейный</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna.</p>
+                        </div></a>
+                        <a href="./premium.html"><div class="service-item1">
+                            <i></i>
+                            <h4>Премиум</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna.</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

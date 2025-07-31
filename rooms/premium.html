@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html ru>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Мечта">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Премиум</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <script>
+            function smoothScroll(event, targetId) {
+                event.preventDefault(); // Отменяем стандартное поведение ссылки
+                const targetElement = document.getElementById(targetId); // Находим целевой элемент
+                targetElement.scrollIntoView({
+                    behavior: 'smooth' // Устанавливаем плавный переход
+                });
+            }
+        </script>
+        <script>
+            function ClickBtn() {
+            document.getElementById('overlay').style.opacity = '1';
+            document.getElementById('overlay').style.display = 'flex';
+            var op = 1;
+            while (op >= 0) {
+                (function(_op) {
+                    setTimeout(function() { document.getElementById('overlay').style.opacity = _op;
+                    document.getElementById('overlay').style.display = 'none';
+                    }, 3000 - op * 600);
+                })(op);
+                op -= 0.1;
+            }
+
+          // Скрыть уведомление через 3 секунды
+          //  setTimeout(function() {
+          //      document.getElementById('overlay').style.opacity = '0.5';
+          //      setTimeout(function() {
+          //          document.getElementById('overlay').style.opacity = '0'; // Скрываем оверлей
+          //      }, 500); // время, равное времени анимации
+          //  }, 3000);
+            }
+        </script>
+        <div id="overlay"><div>Ваша бронь была отправлена нам. Мы с Вами свяжемся как можно скорее.</div></div>
+        <header class="header-section" id="home1">
+            <section class="top-nav">
+
+                <div class="logo-top">
+                     <a href="#home1" onclick="smoothScroll(event, 'home1')">
+                        <img src="./img/logo1.png" alt="">
+                     </a>
+                </div>
+
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+                </label>
+                 <ul class="menu_top">
+                    <li><a href="..\home.html">Главная</a></li>
+                    <li><a href="..\restaurants.html">Рестораны</a></li>
+                    <li><a href="./rooms.html">Номера</a></li>
+                 </ul>
+
+            </section>
+            <div class="menu-item" id="home">
+                <div class="containero">
+                    <div class="row">
+
+                        <div class="logo1">
+                            <div class="logo">
+                                <a href="#home" onclick="smoothScroll(event, 'home')">
+                                    <img src="./img/logo1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="menus">
+                            <div class="nav-menu">
+                                <nav class="mainmenu">
+                                    <ul>
+                                        <li class="ost"><a href="..\restaurants.html">Рестораны</a></li>
+                                        <li class="ost"><a href="./rooms.html">Номера</a>
+                                            <ul class="dropdown">
+                                                <li><a href="./standart.html">Стандарт</a></li>
+                                                <li><a href="./deluxe.html">Делюкс</a></li>
+                                                <li><a href="./family.html">Семейный</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="contact" style="padding-left: 55px;"><a href="..\home.html">Главная</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="box">
+                <div class="container-rooms">
+                    <div class="top1">
+                       <div class="room">
+                           <img src="img\room\premium.jpg" alt="">
+                           <div class="text-room">
+                               <ul>
+                                   <li>Премиум</li>
+                                   <li>1 взрослый 0 детей</li>
+                                   <li>2000 руб. за ночь</li>
+                               </ul>
+                               <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                           </div>
+                        </div>
+                        <div class="room">
+                            <img src="img\room\premium2.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>2 взрослыx 0 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                       </div>
+                    </div>
+               </div>
+               <div class="container-rooms1">
+                    <div class="top1">
+                    <div class="room">
+                        <img src="img\room\premium3.jpg" alt="">
+                        <div class="text-room">
+                            <ul>
+                                <li>Премиум</li>
+                                <li>1 взрослый 1 детей</li>
+                                <li>2000 руб. за ночь</li>
+                            </ul>
+                            <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                        </div>
+                        </div>
+                        <div class="room">
+                            <img src="img\room\premium4.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>2 взрослыx 1 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-rooms1">
+                    <div class="top1">
+                    <div class="room">
+                        <img src="img\room\premium5.jpg" alt="">
+                        <div class="text-room">
+                            <ul>
+                                <li>Премиум</li>
+                                <li>1 взрослый 2 детей</li>
+                                <li>2000 руб. за ночь</li>
+                            </ul>
+                            <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                        </div>
+                        </div>
+                        <div class="room">
+                            <img src="img\room\premium6.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>2 взрослыx 2 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="container-rooms1">
+                    <div class="top1">
+                        <div class="room">
+                            <img src="img\room\premium.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>1 взрослый 0 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-rooms1">
+                    <div class="top1">
+                        <div class="room">
+                            <img src="img\room\premium2.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>2 взрослыx 0 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-rooms1">
+                    <div class="top1">
+                        <div class="room">
+                            <img src="img\room\premium3.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>1 взрослыx 1 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-rooms1">
+                    <div class="top1">
+                        <div class="room">
+                            <img src="img\room\premium4.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>2 взрослыx 1 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-rooms1">
+                    <div class="top1">
+                        <div class="room">
+                            <img src="img\room\premium5.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>1 взрослыx 2 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-rooms1">
+                    <div class="top1">
+                        <div class="room">
+                            <img src="img\room\premium6.jpg" alt="">
+                            <div class="text-room">
+                                <ul>
+                                    <li>Премиум</li>
+                                    <li>2 взрослыx 2 детей</li>
+                                    <li>2000 руб. за ночь</li>
+                                </ul>
+                                <button type="button" id="submitButton" class="button-res" onclick="ClickBtn()">Зарезервировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-section" id="contact1">
+            <div class="container">
+                <div class="footer-text">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="ft-about">
+                                <div class="logo">
+                                    <a href="#">
+                                        <img src="img/footer-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <p>Мы вдохновляем миллионы путешественников <br /> и привлекаем их внимание на 90 местных веб-сайтах</p>
+                                <div class="fa-social">
+                                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa fa-telegram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <div class="ft-contact">
+                                <h6>Контакты</h6>
+                                <ul>
+                                    <li>555 55 55</li>
+                                    <li>info.dream@mail.ru</li>
+                                    <li>Луна, Море забвения</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <div class="ft-newslatter">
+                                <h6> Напишите нам</h6>
+                                <p>Отправьте все Ваши вопросы и мы свяжемся с Вами.</p>
+                                <form action="#" class="fn-form">
+                                    <input type="text" placeholder="Email">
+                                    <button type="submit"><i class="fa fa-send"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-option">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <ul>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Условия использования</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="co-text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;2024 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://dkr.ru" target="_blank">DKR</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
