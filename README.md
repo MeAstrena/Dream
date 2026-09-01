@@ -15,7 +15,7 @@
 Самостоятельная разработка.
 
 ## Ссылка на проект
-meastrena.github.io/Dream/
+[Dream]meastrena.github.io/Dream/
 
 ## Дата
 январь 2025
